@@ -17,5 +17,10 @@ pipeline {
 				}
 			}
         }
+		stage('Deploy to Stagging') {
+			steps {
+				build job: 'Lesson5-Deploy-to-Stagging'
+			}
+		}
     }
 }
